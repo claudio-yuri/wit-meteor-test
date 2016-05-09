@@ -1,22 +1,13 @@
+# wit-meteor-todo
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
-
-
-Welcome to your Meteor project on Cloud9 IDE!
-
-To run your new app open your terminal and type:
+This is a project to test how meteor works
    
     $ meteor --port $IP:$PORT
 
+Current status:
 
-Happy coding!
-The Cloud9 IDE team
+Tutorial completed up to:
+https://www.meteor.com/tutorials/blaze/security-with-methods
 
-## Support & Documentation
-
-Meteor documentation can be found at http://docs.meteor.com/
+#### Pending 
+Facebook login
