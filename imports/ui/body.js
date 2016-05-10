@@ -9,6 +9,7 @@ import './body.html';
 
 Template.body.onCreated(function bodyOnCreated(){
     this.state = new ReactiveDict();
+    Meteor.subscribe('tasks');
 });
 
 Template.body.helpers({
@@ -35,12 +36,10 @@ Template.body.events({
         const text = target.text.value;
     
         // Insert a task into the collection
-        Tasks.insert({
-          text,
-          createdAt: new Date(), // current time
-          owner: Meteor.userId(),
-          username: Meteor.user().username,
-        });
+        //Optimistic UI - cuando se llama esto se hace el request y
+        //          mientras se espera la respuesta, se trata de predecir
+        //          mostrando un posible resultado en pantall que luego se valida  
+        Meteor.call('tasks.insert', text);
     
         // Clear form
         target.text.value = '';

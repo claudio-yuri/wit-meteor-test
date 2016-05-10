@@ -7,7 +7,8 @@ This is a project to test how meteor works
 Current status:
 
 Tutorial completed up to:
-https://www.meteor.com/tutorials/blaze/security-with-methods
+https://www.meteor.com/tutorials/blaze/testing
 
 #### Pending 
-Facebook login
+* Facebook login
+* Unit Tests
